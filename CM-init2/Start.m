@@ -8,6 +8,11 @@
 
 #import "Start.h"
 
+NSArray *aNames;
+NSMutableArray *maMsgs;
+int iIndex =0;
+
+
 @interface Start ()
 
 @end
@@ -16,7 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initController];
     self.lblWelcome.text = @"Que shalala";
+    
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -26,8 +33,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)initController{
+    self.lblWelcome.text = @"hola lol";
+    maMsgs = [[NSMutableArray alloc] init];
+    maMsgs = [[NSMutableArray alloc] initWithObjects:@"ab", @"cd", @"jaja", nil];
+    //maMsgs = [NSMutableArray arrayWithObjects:@"ab", @"cd", @"hf", nil];
+
+}
+
 - (IBAction)button1Pressed:(id)sender {
-    self.lblWelcome.text = @"lololo";
+    self.lblWelcome.text = maMsgs[iIndex];
+    iIndex++;
     self.lblWelcome.adjustsFontSizeToFitWidth = true;
     
 }

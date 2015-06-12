@@ -26,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)button1Pressed:(id)sender {
+    self.lblWelcome.text = @"lololo";
+    self.lblWelcome.adjustsFontSizeToFitWidth = true;
+    
+}
 @end

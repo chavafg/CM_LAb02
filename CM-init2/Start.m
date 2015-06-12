@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.lblWelcome.text = @"Que shalala";
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

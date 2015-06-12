@@ -10,6 +10,7 @@
 
 NSArray *aNames;
 NSMutableArray *maMsgs;
+NSMutableArray *imgArr;
 int iIndex =0;
 
 
